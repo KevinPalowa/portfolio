@@ -1,4 +1,5 @@
 import Head from "next/head";
+import NavBar from '../components/NavBar'
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
         <title>Next Page</title>
       </Head>
       <div className="container mx-auto max-w-4xl">
-        <p className="text-red-200">Test</p>
+        <NavBar/>
       </div>
     </main>
   );
