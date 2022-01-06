@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Next Page</title>
       </Head>
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto max-w-4xl font-sans">
         <NavBar/>
       </div>
     </main>
