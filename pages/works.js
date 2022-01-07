@@ -1,10 +1,10 @@
 import React from "react";
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
 export default function works() {
   return (
-    <div>
-      <NavBar />
-    </div>
+    <>
+      <Layout></Layout>
+    </>
   );
 }

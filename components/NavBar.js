@@ -4,7 +4,6 @@ import ThemeToggle from "./ThemeToggle";
 function NavLink({ href, children }) {
   const router = useRouter();
   const isActive = router.asPath === href;
-  console.log(isActive);
   return (
     <Link href={href}>
       <a
