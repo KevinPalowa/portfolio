@@ -1,21 +1,37 @@
 import Link from "next/link";
-import ThemeToggle from "./ThemeToggle"
-export default function NavBar(){
-  return(
-    <nav className='flex justify-between '>
-      <Link href='/'><a className='font-semibold text-xl'>Kevin</a></Link>
-      <ul className='flex space-x-5 text-xl'>
-        <li>
-          <Link href='/'>Works</Link>
-        </li>
-        <li>
-          <Link href='/'>About</Link>
-        </li>
-        <li>
-          <Link href='/'>Posts</Link>
-        </li>
+import { useRouter } from "next/router";
+import ThemeToggle from "./ThemeToggle";
+function NavLink({ href, children }) {
+  const router = useRouter();
+  const isActive = router.asPath === href;
+  console.log(isActive);
+  return (
+    <Link href={href}>
+      <a
+        className={
+          isActive
+            ? "dark:text-[#eceff4] text-[#2e3440]"
+            : "text-slate-500 dark:text-[#5e81ac]"
+        }
+      >
+        {children}
+      </a>
+    </Link>
+  );
+}
+export default function NavBar() {
+  return (
+    <nav className="flex justify-between ">
+      {/* <Link href="/">
+        <a className="font-semibold text-xl">Kevin</a>
+      </Link> */}
+      <ul className="flex space-x-5 text-lg">
+        <NavLink href="/">Home</NavLink>
+        <NavLink href="/works">Works</NavLink>
+        <NavLink href="/about">About</NavLink>
+        <NavLink href="/post">Posts</NavLink>
       </ul>
-     <ThemeToggle/> 
+      <ThemeToggle />
     </nav>
-  )
+  );
 }
