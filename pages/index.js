@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hero from "../components/Hero"
 import NavBar from '../components/NavBar'
 
 export default function Home() {
@@ -7,8 +8,9 @@ export default function Home() {
       <Head>
         <title>Next Page</title>
       </Head>
-      <div className="container mx-auto max-w-4xl font-sans">
+      <div className="container mx-auto max-w-3xl font-sans">
         <NavBar/>
+        <Hero/>
       </div>
     </main>
   );
