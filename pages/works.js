@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 export default function works() {
   return (
     <>
-      <Layout></Layout>
+      <Layout title="Works - Kevin Palowa"></Layout>
     </>
   );
 }

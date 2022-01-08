@@ -1,5 +1,5 @@
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans : ['Poppins','ui-sans-serif', 'system-ui'],      
-    }
+      sans: ["M PLUS Rounded c1", "ui-sans-serif", "system-ui"],
+    },
   },
   plugins: [],
 };

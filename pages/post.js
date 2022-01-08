@@ -2,5 +2,5 @@ import React from "react";
 import Layout from "../components/Layout";
 
 export default function post() {
-  return <Layout></Layout>;
+  return <Layout title="Posts - Kevin Palowa"></Layout>;
 }

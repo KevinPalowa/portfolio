@@ -20,7 +20,7 @@ function NavLink({ href, children }) {
 }
 export default function NavBar() {
   return (
-    <nav className="flex justify-between ">
+    <nav className="flex justify-between mt-5">
       {/* <Link href="/">
         <a className="font-semibold text-xl">Kevin</a>
       </Link> */}
