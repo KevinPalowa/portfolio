@@ -10,7 +10,7 @@ function NavLink({ href, children }) {
         className={
           isActive
             ? "dark:text-[#eceff4] text-[#2e3440]"
-            : "text-slate-500 dark:text-[#5e81ac]"
+            :  "hover:dark:text-[#eceff4] hover:text-[#2e3440] text-slate-500 dark:text-[#5e81ac]"
         }
       >
         {children}
