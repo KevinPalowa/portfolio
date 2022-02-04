@@ -13,7 +13,7 @@ export default function Home() {
         </p>
       </Section>
       <Section title="My Projects">
-        <Cards/>
+        <Cards />
       </Section>
     </Layout>
   );

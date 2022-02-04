@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex justify-between mt-5">
+    <div className="flex-col md:flex-row flex justify-between mt-5 space-y-3">
       <div>
         <h2 className="font-semibold text-3xl">Kevin Palowa</h2>
         <p className="">Frontend Programmer ( Javascript, HTML, CSS, React )</p>
@@ -10,7 +10,7 @@ export default function Hero() {
           Love music, games and all kinda computer thing
         </p>
       </div>
-      <div className="border-2 border-[#bf616a] rounded-full w-20 h-20 bg-blue-100"></div>
+      <div className="border-2 self-center border-[#bf616a] rounded-full w-20 h-20 bg-blue-100"></div>
     </div>
   );
 }

@@ -7,10 +7,10 @@ export default function Layout({ children, title = "Kevin Palowa" }) {
       <Head>
         <title>{title}</title>
       </Head>
-      <div className="container mx-auto max-w-3xl font-sans">
+      <div className="container mx-auto max-w-3xl font-sans px-5 md:p-0">
         <NavBar />
       </div>
-      <main className="max-w-2xl mx-auto container">{children}</main>
+      <main className="max-w-2xl mx-auto container p-5 md:p-0">{children}</main>
     </div>
   );
 }
