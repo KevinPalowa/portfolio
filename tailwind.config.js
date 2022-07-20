@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ["M PLUS Rounded c1", "ui-sans-serif", "system-ui"],
+      sans: ["IBM Plex sans", "ui-sans-serif", "system-ui"],
     },
   },
   plugins: [],

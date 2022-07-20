@@ -10,7 +10,7 @@ function NavLink({ href, children }) {
         className={
           isActive
             ? "dark:text-[#eceff4] text-[#2e3440]"
-            :  "hover:dark:text-[#eceff4] hover:text-[#2e3440] text-slate-500 dark:text-[#5e81ac]"
+            : "hover:dark:text-[#eceff4] hover:text-[#2e3440] text-slate-500 dark:text-[#5e81ac]"
         }
       >
         {children}
@@ -20,7 +20,7 @@ function NavLink({ href, children }) {
 }
 export default function NavBar() {
   return (
-    <nav className="flex justify-between mt-5">
+    <nav className="flex justify-between py-8">
       {/* <Link href="/">
         <a className="font-semibold text-xl">Kevin</a>
       </Link> */}

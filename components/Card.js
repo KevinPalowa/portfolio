@@ -1,14 +1,16 @@
 import Link from "next/link";
-
-export default function Card({ children, title }) {
+import Image from "next/image";
+export default function Card({ children, title, href = "/", src }) {
   return (
-    <Link href="/">
+    <Link href={href}>
       <a className="hover:scale-105 transition rounded-md border border-slate-500 p-3 space-y-3">
         <div>
           <h3 className="font-semibold text-lg">{title}</h3>
           <p className="text-[#5e81ac]">{children}</p>
         </div>
-        <div className="w-full h-[130px] bg-red-100 rounded-lg"></div>
+        <div className="w-full h-[130px]  rounded-lg">
+          <img src={src} layout="fill" alt="pic" />
+        </div>
         <p>See More</p>
       </a>
     </Link>
