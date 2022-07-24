@@ -8,7 +8,7 @@ export default function Card({ children, title, href = "/", src }) {
           <h3 className="font-semibold text-lg">{title}</h3>
           <p className="text-[#5e81ac]">{children}</p>
         </div>
-        <div className="w-full h-[130px]  rounded-lg">
+        <div className="w-full rounded-lg">
           <img src={src} layout="fill" alt="pic" />
         </div>
         <p>See More</p>

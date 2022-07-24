@@ -7,7 +7,14 @@ export default function Cards() {
         title="E Commerce"
         href="https://github.com/KevinPalowa/ecommerce"
       >
-        test
+        An ecommerce with Next,stripe and sanity
+      </Card>
+      <Card
+        src="/images/ecommerce.png"
+        title="NFT-Market"
+        href="https://github.com/KevinPalowa/nft-market"
+      >
+        NFT Market Pages
       </Card>
     </div>
   );

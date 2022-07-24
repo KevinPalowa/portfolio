@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import Layout from "../components/Layout";
 
@@ -6,7 +7,7 @@ export default function about() {
     <Layout title="Posts - Kevin Palowa">
       <h2 className="font-semibold text-2xl">About</h2>
       <h1 className="font-semibold text-3xl">Muhammad Kevin Alviansyah</h1>
-      <section className="space-y-3 mt-5">
+      <article className="space-y-3 mt-5">
         <p>
           Hello my name is Muhammad, I love computer stuff from junior
           highschool and I love to explore all about computer like OS (I love
@@ -23,7 +24,7 @@ export default function about() {
           react environment and it keeps me motivated to keep learning, I will
           update React learning journey in here.
         </p>
-      </section>
+      </article>
     </Layout>
   );
 }

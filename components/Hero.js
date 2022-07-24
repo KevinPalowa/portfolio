@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { FcLinux } from "react-icons/fc";
 export default function Hero() {
   return (
     <>
@@ -18,6 +17,7 @@ export default function Hero() {
             src="/images/profile.jpeg"
             layout="fill"
             className="rounded-full "
+            alt="profile"
           />
         </div>
       </div>
