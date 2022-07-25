@@ -14,9 +14,9 @@ export default function ThemeToggle() {
     >
       {mounted &&
         (theme === "dark" ? (
-          <SunIcon className="text-[#eceff4] h-5 w-7" />
+          <SunIcon className="text-[#eceff4] w-[20px]" />
         ) : (
-          <MoonIcon className="h-5 w-7" />
+          <MoonIcon className="w-[16px]" />
         ))}
     </button>
   );
