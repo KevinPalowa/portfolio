@@ -2,7 +2,6 @@ import Hero from "../components/Hero";
 import Layout from "../components/Layout";
 import Section from "../components/Section";
 import Cards from "../components/Cards";
-import { useEffect } from "react";
 export default function Home() {
   return (
     <Layout title="Kevin Palowa - Home">

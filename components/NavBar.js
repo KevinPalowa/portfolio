@@ -42,11 +42,11 @@ export default function NavBar() {
           <GoThreeBars className="w-[16px]" />
         </button>
         {isActive ? (
-          <div className="bg-gray-500 p-3 w-1/3 fixed right-5 rounded-md top-16 space-y-2">
-            <p>Home</p>
-            <p>Works</p>
-            <p>About</p>
-            <p>Posts</p>
+          <div className="bg-gray-500 flex flex-col p-3 w-1/3 fixed right-5 rounded-md top-16 space-y-2">
+            <Link href="/">Home</Link>
+            <Link href="/works">Works</Link>
+            <Link href="/about">About</Link>
+            <Link href="/posts">Posts</Link>
           </div>
         ) : (
           ""

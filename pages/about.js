@@ -1,10 +1,9 @@
-import Image from "next/image";
 import React from "react";
 import Layout from "../components/Layout";
 
 export default function about() {
   return (
-    <Layout title="Posts - Kevin Palowa">
+    <Layout title="About - Kevin Palowa">
       <h2 className="font-semibold text-2xl">About</h2>
       <h1 className="font-semibold text-3xl">Muhammad Kevin Alviansyah</h1>
       <article className="space-y-3 mt-5">

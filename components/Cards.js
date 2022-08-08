@@ -1,7 +1,20 @@
 import Card from "./Card";
+import { motion } from "framer-motion";
 export default function Cards() {
+  const animations = {
+    initial: { opacity: 0, x: 100 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, x: -100 },
+  };
   return (
-    <div className="grid md:grid-cols-2 gap-3">
+    <motion.div
+      variants={animations}
+      transition={{ duration: 1 }}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="grid md:grid-cols-2 gap-3"
+    >
       <Card
         src="/images/ecommerce.png"
         title="E Commerce"
@@ -11,11 +24,11 @@ export default function Cards() {
       </Card>
       <Card
         src="/images/ecommerce.png"
-        title="NFT-Market"
+        title="Movie List Web"
         href="https://github.com/KevinPalowa/nft-market"
       >
-        NFT Market Pages
+        Movie Web with tmdb API
       </Card>
-    </div>
+    </motion.div>
   );
 }

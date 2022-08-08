@@ -1,7 +1,8 @@
 import Image from "next/image";
+
 export default function Hero() {
   return (
-    <>
+    <div className="space-y-3 mt-14">
       <div className="flex-col md:flex-row  flex mt-5 justify-between space-y-3">
         <div className="flex-grow-1">
           <h2 className="font-bold text-3xl">Kevin Palowa</h2>
@@ -24,6 +25,6 @@ export default function Hero() {
       <div className="w-full bg-gray-300 dark:bg-gray-800 rounded-md p-3 mt-5 text-center">
         <p>Hello, I&apos;m an React developer and Linux enthusiast</p>
       </div>
-    </>
+    </div>
   );
 }

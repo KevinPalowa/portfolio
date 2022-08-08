@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 export default function Card({ children, title, href = "/", src }) {
   return (
     <Link href={href}>
