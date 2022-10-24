@@ -18,14 +18,14 @@ export default function Cards() {
       <Card
         src="/images/ecommerce.png"
         title="E Commerce"
-        href="https://github.com/KevinPalowa/ecommerce"
+        href="work/ecommerce"
       >
         An ecommerce with Next,stripe and sanity
       </Card>
       <Card
         src="/images/ecommerce.png"
         title="Movie List Web"
-        href="https://github.com/KevinPalowa/nft-market"
+        href="/work/movies-web"
       >
         Movie Web with tmdb API
       </Card>
