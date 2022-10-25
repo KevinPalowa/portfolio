@@ -1,3 +1,4 @@
+import { NextApiRequest, NextApiResponse } from "next";
 import querystring from "querystring";
 
 const {
@@ -36,7 +37,10 @@ export const getNowPlaying = async () => {
   });
 };
 
-export default async function handler(req, res) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const response = await getNowPlaying();
 
   if (response.status === 204 || response.status > 400) {
@@ -52,7 +56,7 @@ export default async function handler(req, res) {
   const data = {
     isPlaying: song.is_playing,
     title: song.item.name,
-    artist: song.item.artists.map((_artist) => _artist.name).join(", "),
+    artist: song.item.artists.map((_artist: any) => _artist.name).join(", "),
     album: song.item.album.name,
     albumImageUrl: song.item.album.images[0].url,
     songUrl: song.item.external_urls.spotify,

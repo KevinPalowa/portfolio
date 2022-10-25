@@ -1,10 +1,9 @@
-import React from "react";
-import Head from "next/head";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
 import { motion } from "framer-motion";
-export default function Layout({ children, title = "Kevin Palowa" }) {
-
+import Head from "next/head";
+import Footer from "./Footer";
+import NavBar from "./NavBar";
+type Props = { children?: React.ReactNode; title: string };
+export default function Layout({ children, title = "Kevin Palowa" }: Props) {
   const animations = {
     initial: { opacity: 0, y: 100 },
     animate: { opacity: 1, y: 0 },

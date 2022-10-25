@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import ThemeToggle from "./ThemeToggle";
-import { GoThreeBars } from "react-icons/go";
 import { useState } from "react";
-function NavLink({ href, children }) {
+import { GoThreeBars } from "react-icons/go";
+import ThemeToggle from "./ThemeToggle";
+type Props = { href: string; children: string };
+function NavLink({ href, children }: Props) {
   const router = useRouter();
   const isActive = router.asPath === href;
   return (

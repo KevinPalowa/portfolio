@@ -1,10 +1,8 @@
-import useSWR from "swr";
-import { useEffect } from "react";
 import { SiSpotify } from "react-icons/si";
-import Image from "next/image";
+import useSWR from "swr";
 
 export default function NowPlaying() {
-  const fetcher = (url) => fetch(url).then((r) => r.json());
+  const fetcher = (url: string) => fetch(url).then((r) => r.json());
   const { data } = useSWR("/api/now-playing", fetcher);
 
   console.log(data);

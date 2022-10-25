@@ -1,7 +1,11 @@
 import Link from "next/link";
 import NowPlaying from "../components/NowPlaying";
 
-function FooterLink({ href, children }) {
+type Props = {
+  href: string;
+  children: string;
+};
+function FooterLink({ href, children }: Props) {
   return (
     <Link href={href}>
       <a className="block text-slate-500 dark:text-[#5e81ac] text-center">
