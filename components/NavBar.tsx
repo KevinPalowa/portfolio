@@ -32,7 +32,7 @@ export default function NavBar() {
         <NavLink href="/">Home</NavLink>
         <NavLink href="/works">Works</NavLink>
         <NavLink href="/about">About</NavLink>
-        <NavLink href="/post">Posts</NavLink>
+        <NavLink href="/posts">Posts</NavLink>
       </ul>
       <div className="space-x-2 ml-auto">
         <ThemeToggle />

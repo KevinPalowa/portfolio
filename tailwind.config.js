@@ -10,5 +10,5 @@ module.exports = {
       sans: ["IBM Plex sans", "ui-sans-serif", "system-ui"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
