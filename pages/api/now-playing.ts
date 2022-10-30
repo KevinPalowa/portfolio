@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import querystring from "querystring";
+import queryString from "query-string";
 
 const {
   SPOTIFY_CLIENT_ID: client_id,
@@ -18,7 +18,7 @@ const getAccessToken = async () => {
       Authorization: `Basic ${basic}`,
       "Content-Type": "application/x-www-form-urlencoded",
     },
-    body: querystring.stringify({
+    body: queryString.stringify({
       grant_type: "refresh_token",
       refresh_token,
     }),
@@ -42,24 +42,18 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const response = await getNowPlaying();
-
   if (response.status === 204 || response.status > 400) {
-    return new Response(JSON.stringify({ isPlaying: false }), {
-      status: 200,
-      headers: {
-        "content-type": "application/json",
-      },
-    });
+    return res.status(200).json({ isPlaying: false });
+  } else if (response.status === 200) {
+    const song = await response.json();
+    const data = {
+      isPlaying: song.is_playing,
+      title: song.item.name,
+      artist: song.item.artists.map((_artist: any) => _artist.name).join(", "),
+      album: song.item.album.name,
+      albumImageUrl: song.item.album.images[0].url,
+      songUrl: song.item.external_urls.spotify,
+    };
+    res.status(200).json(data);
   }
-
-  const song = await response.json();
-  const data = {
-    isPlaying: song.is_playing,
-    title: song.item.name,
-    artist: song.item.artists.map((_artist: any) => _artist.name).join(", "),
-    album: song.item.album.name,
-    albumImageUrl: song.item.album.images[0].url,
-    songUrl: song.item.external_urls.spotify,
-  };
-  res.status(200).json(data);
 }

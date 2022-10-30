@@ -4,7 +4,6 @@ import useSWR from "swr";
 export default function NowPlaying() {
   const fetcher = (url: string) => fetch(url).then((r) => r.json());
   const { data } = useSWR("/api/now-playing", fetcher);
-  console.log(data);
   return (
     <div className="flex flex-row-reverse sm:flex-row justify-between sm:justify-start items-center mb-3">
       {/* <Image src={data?.albumImageUrl} alt="Album Pic" className="w-[50px]" /> */}
