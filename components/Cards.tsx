@@ -1,5 +1,5 @@
-import Card from "./Card";
 import { motion } from "framer-motion";
+import Card from "./Card";
 export default function Cards() {
   const animations = {
     initial: { opacity: 0, x: 100 },

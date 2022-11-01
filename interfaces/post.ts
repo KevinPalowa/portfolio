@@ -9,7 +9,6 @@ type Post = {
     thumbail: string;
     thumbnailCredit: string;
     title: string;
-    updateAt: string;
   };
 };
 export default Post;
