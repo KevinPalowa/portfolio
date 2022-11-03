@@ -28,9 +28,9 @@ export default function NavBar() {
       {/* <Link href="/">
         <a className="font-semibold text-xl">Kevin</a>
       </Link> */}
-      <ul className="flex hidden sm:flex space-x-5 text-lg">
+      <ul className="hidden sm:flex space-x-5 text-lg">
         <NavLink href="/">Home</NavLink>
-        <NavLink href="/works">Works</NavLink>
+        <NavLink href="/projects">Projects</NavLink>
         <NavLink href="/about">About</NavLink>
         <NavLink href="/posts">Posts</NavLink>
       </ul>

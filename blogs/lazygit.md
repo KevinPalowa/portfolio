@@ -2,8 +2,8 @@
 title: "Menggunakan GIT dengan mudah dengan Lazygit"
 thumbnail: /git.png
 thumbnailCredit: Photo by Lautaro Andreani on Unsplash
-summary: Menggukanan git dengan UI di terminal.
-tags: [git]
+summary: Menggunakan terminal seperti hengker.
+tags: [git, tools]
 author: Kevin Palowa
 createdAt: "2022-10-30"
 ---
@@ -76,4 +76,5 @@ Tekan `spasi` untuk memasukan file ke staged, untuk memasukan semua file ke stag
 ![commit](/images/post/test.gif)
 
 ## Penutup
+
 Sebelum menggunakan tools tambahan seperti [Lazygit](https://github.com/jesseduffield/Lazygit) jangan lupa juga kita harus menguasi git sebelumnykarena [Lazygit](https://github.com/jesseduffield/Lazygit) ini adalah alat pembantu git bukan untuk menggantikan git.

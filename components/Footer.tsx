@@ -16,7 +16,7 @@ function FooterLink({ href, children }: Props) {
 }
 export default function Footer() {
   return (
-    <>
+    <footer>
       <hr className="border-1 border-[#5e81ac] my-5"></hr>
       <NowPlaying />
       <div className="flex relative bottom-0  w-full mb-5 justify-between">
@@ -36,6 +36,6 @@ export default function Footer() {
           <FooterLink href="/works">About</FooterLink>
         </div>
       </div>
-    </>
+    </footer>
   );
 }

@@ -18,16 +18,26 @@ export default function Cards() {
       <Card
         src="/images/ecommerce.png"
         title="E Commerce"
-        href="work/ecommerce"
+        githubUrl="https://github.com/kevinpalowa/ecommerce"
+        demoUrl="https://ecommerce-phi-sage.vercel.app/"
       >
         An ecommerce with Next,stripe and sanity
       </Card>
       <Card
-        src="/images/ecommerce.png"
+        src="/images/moviesweb.png"
         title="Movie List Web"
-        href="/work/movies-web"
+        githubUrl="https://github.com/kevinpalowa/movies-web"
+        demoUrl="http://movies-web-six.vercel.app/"
       >
         Movie Web with tmdb API
+      </Card>
+      <Card
+        src="/images/countries.png"
+        title="countries List Web"
+        githubUrl="https://github.com/kevinpalowa/countries"
+        demoUrl="https://countries-bay-rho.vercel.app/"
+      >
+        List countries using api
       </Card>
     </motion.div>
   );

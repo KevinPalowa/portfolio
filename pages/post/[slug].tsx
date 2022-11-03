@@ -6,7 +6,7 @@ type Props = { post: Post };
 export default function post({ post }: Props) {
   return (
     <Layout title={`${post.data.title} - Kevin Palowa`}>
-      <h2 className="font-bold text-3xl mb-5">{post.data.title}</h2>
+      <h1 className="font-bold text-4xl mb-5">{post.data.title}</h1>
       <Image
         width={700}
         height={475}
@@ -18,7 +18,7 @@ export default function post({ post }: Props) {
         alt="banner"
         src="/images/post/git.png"
       />
-      <p className="text-sm mt-2 italic mb-5">
+      <p className="text-sm mt-2 italic mb-5 text-[#5e81ac]">
         Published on {post.data.createdAt}
       </p>
       <article

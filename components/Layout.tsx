@@ -10,27 +10,27 @@ export default function Layout({ children, title = "Kevin Palowa" }: Props) {
     exit: { opacity: 0, y: -100 },
   };
   return (
-    <div>
+    <>
       <Head>
         <title>{title}</title>
         <meta name="author" content="Kevin Palowa" />
         <meta name="description" content="blog pribadi" />
       </Head>
-      <div className="container mx-auto max-w-3xl font-sans px-5 md:p-0">
-        <NavBar />
-      </div>
-      <motion.main
-        variants={animations}
-        transition={{ duration: 1 }}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        className="max-w-3xl mx-auto container p-5 md:p-0"
-      >
-        {children}
 
+      <div className="flex flex-col min-h-screen">
+        <NavBar />
+        <motion.main
+          variants={animations}
+          transition={{ duration: 1 }}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          className="grow"
+        >
+          {children}
+        </motion.main>
         <Footer />
-      </motion.main>
-    </div>
+      </div>
+    </>
   );
 }
