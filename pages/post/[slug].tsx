@@ -7,17 +7,14 @@ export default function post({ post }: Props) {
   return (
     <Layout title={`${post.data.title} - Kevin Palowa`}>
       <h1 className="font-bold text-4xl mb-5">{post.data.title}</h1>
-      <Image
-        width={700}
-        height={475}
-        sizes="100vw"
-        style={{
-          width: "100%",
-          height: "auto",
-        }}
-        alt="banner"
-        src="/images/post/git.png"
-      />
+      <div className="w-[700px] h-[475px] relative">
+        <Image
+          alt="banner"
+          src={`/images/post${post.data.thumbnail}`}
+          layout="fill"
+          className="object-cover"
+        />
+      </div>
       <p className="text-sm mt-2 italic mb-5 text-[#5e81ac]">
         Published on {post.data.createdAt}
       </p>

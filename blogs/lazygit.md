@@ -78,3 +78,9 @@ Tekan `spasi` untuk memasukan file ke staged, untuk memasukan semua file ke stag
 ## Penutup
 
 Sebelum menggunakan tools tambahan seperti [Lazygit](https://github.com/jesseduffield/Lazygit) jangan lupa juga kita harus menguasi git sebelumnykarena [Lazygit](https://github.com/jesseduffield/Lazygit) ini adalah alat pembantu git bukan untuk menggantikan git.
+
+```js
+module.exports = {
+  reactStrictMode: true,
+};
+```

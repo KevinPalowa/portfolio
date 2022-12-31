@@ -5,6 +5,7 @@ import { getAllPosts } from "../lib/blog";
 
 type Props = { posts: Post[] };
 export default function posts({ posts }: Props) {
+  console.log(posts);
   return (
     <Layout title="Posts - Kevin Palowa">
       <h1 className="text-5xl font-bold">Blog</h1>

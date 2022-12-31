@@ -6,7 +6,7 @@ type Post = {
     slug: string;
     summary: string;
     tags: string[];
-    thumbail: string;
+    thumbnail: string;
     thumbnailCredit: string;
     title: string;
   };
