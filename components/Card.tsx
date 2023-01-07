@@ -33,7 +33,7 @@ export default function Card({
           layout="fill"
           src={src}
           alt="card image"
-          className="rounded-t-md"
+          className="rounded-t-md object-cover"
         />
       </div>
       <div className="py-5 space-y-5 flex flex-col items-center">
