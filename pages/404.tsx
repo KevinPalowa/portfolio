@@ -9,10 +9,11 @@ function error() {
       <p className="text-slate-400">
         Maybe you spelled url wrong, please check the url.
       </p>
-      <Link href="/">
-        <a className="font-bold p-3 bg-gray-700 rounded-md inline-block mt-5">
-          Back to home
-        </a>
+      <Link
+        href="/"
+        className="font-bold p-3 bg-gray-700 rounded-md inline-block mt-5"
+      >
+        Back to home
       </Link>
     </Layout>
   );

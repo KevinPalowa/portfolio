@@ -7,10 +7,11 @@ type Props = {
 };
 function FooterLink({ href, children }: Props) {
   return (
-    <Link href={href}>
-      <a className="block text-slate-500 dark:text-[#5e81ac] text-center">
-        {children}
-      </a>
+    <Link
+      href={href}
+      className="block text-slate-500 dark:text-[#5e81ac] text-center"
+    >
+      {children}
     </Link>
   );
 }

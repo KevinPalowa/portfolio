@@ -8,16 +8,15 @@ function NavLink({ href, children }: Props) {
   const router = useRouter();
   const isActive = router.asPath === href;
   return (
-    <Link href={href}>
-      <a
-        className={
-          isActive
-            ? "dark:text-[#eceff4] text-[#2e3440]"
-            : "hover:dark:text-[#eceff4] hover:text-[#2e3440] text-slate-500 dark:text-[#5e81ac]"
-        }
-      >
-        {children}
-      </a>
+    <Link
+      href={href}
+      className={
+        isActive
+          ? "dark:text-[#eceff4] text-[#2e3440]"
+          : "hover:dark:text-[#eceff4] hover:text-[#2e3440] text-slate-500 dark:text-[#5e81ac]"
+      }
+    >
+      {children}
     </Link>
   );
 }
