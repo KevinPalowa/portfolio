@@ -23,17 +23,19 @@ export default function Footer() {
         <div className="space-y-3">
           <FooterLink href="/">Home</FooterLink>
           <FooterLink href="/about">About</FooterLink>
+        </div>
+        <div className="space-y-3">
           <FooterLink href="/works">Works</FooterLink>
-        </div>
-        <div className="space-y-3">
-          <FooterLink href="/works">Twitter</FooterLink>
+
           <FooterLink href="https://github.com/kevinpalowa">Github</FooterLink>
-          <FooterLink href="/works">Instagram</FooterLink>
         </div>
         <div className="space-y-3">
-          <FooterLink href="/works">Youtube</FooterLink>
-          <FooterLink href="/works">News</FooterLink>
-          <FooterLink href="/works">About</FooterLink>
+          <FooterLink href="https://twitter.com/Kevinpalowa_">
+            Twitter
+          </FooterLink>
+          <FooterLink href="https://www.instagram.com/kevin_palowa/">
+            Instagram
+          </FooterLink>
         </div>
       </div>
     </footer>
