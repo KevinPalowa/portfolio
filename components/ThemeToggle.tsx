@@ -11,6 +11,7 @@ export default function ThemeToggle() {
         setTheme(theme === "light" ? "dark" : "light");
       }}
       className="bg-[#d08770] px-2 py-2 rounded-md"
+      aria-label="Theme toggle button"
     >
       {mounted &&
         (theme === "dark" ? (
