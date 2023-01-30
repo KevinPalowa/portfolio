@@ -37,12 +37,12 @@ export default function NavBar() {
         <ThemeToggle />
         <button
           onClick={() => setIsActive(!isActive)}
-          className="bg-[#eceff4] px-2 py-2 sm:hidden rounded-md"
+          className="bg-[#eceff4] px-2 py-2.5 sm:hidden rounded-md text-dark-primary"
         >
-          <GoThreeBars className="w-[16px]" />
+          <GoThreeBars className="w-[20px]" />
         </button>
         {isActive ? (
-          <div className="dark:bg-gray-500 bg-white flex flex-col p-3 w-1/3 fixed right-5 rounded-md top-16 space-y-2">
+          <div className="dark:bg-gray-500 bg-white flex flex-col p-3 w-1/3 fixed right-5 rounded-md top-16 space-y-2 z-40">
             <Link href="/">Home</Link>
             <Link href="/works">Works</Link>
             <Link href="/about">About</Link>

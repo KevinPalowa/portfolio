@@ -5,7 +5,8 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <body className="bg-[#d8dee9] dark:bg-[#2e3440] text-[#2e3440] dark:text-[#d8dee9] transition max-w-3xl container p-5 md:p-0">
+        <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+        <body className="bg-light-primary dark:bg-dark-primary text-dark-primary dark:text-dark-text transition max-w-3xl container p-5 md:p-0">
           <Main />
           <NextScript />
         </body>
