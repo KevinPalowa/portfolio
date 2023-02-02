@@ -51,16 +51,15 @@ export default function NavBar() {
         <motion.div
           className="dark:bg-[#3B4252] bg-white flex flex-col items-center justify-center p-3 space-y-2 z-40 fixed inset-0"
           variants={animations}
-          transition={{ duration: 0.5 }}
-          initial="initial"
+          transition={{ ease: "circIn", duration: 0.5 }}
           animate={isActive ? "animate" : "exit"}
-          exit="exit"
+          initial={false}
         >
           <button
             onClick={() => setIsActive(false)}
-            className="absolute right-2 top-0"
+            className="absolute right-2 top-2"
           >
-            <XIcon className="text-[#000000] w-[20px]" />
+            <XIcon className="text-[#000000] dark:text-light-primary w-[24px]" />
           </button>
           <Link href="/">Home</Link>
           <Link href="/works">Works</Link>
