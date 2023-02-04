@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
       <Html>
         <Head />
         <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-        <body className="bg-light-primary dark:bg-dark-primary text-dark-primary dark:text-dark-text transition max-w-3xl container p-5 md:p-0">
+        <body className="bg-light-primary dark:bg-dark-primary text-dark-primary dark:text-dark-text transition max-w-3xl container p-5 lg:p-0">
           <Main />
           <NextScript />
         </body>
