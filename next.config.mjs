@@ -1,4 +1,4 @@
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [
@@ -11,3 +11,4 @@ module.exports = {
     ],
   },
 };
+export default nextConfig;

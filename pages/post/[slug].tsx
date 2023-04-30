@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MDXRemote } from "next-mdx-remote";
 import Layout from "../../components/Layout";
 import Post from "../../interfaces/post";
 import { getAllSlug, getPostBySlug } from "../../lib/blog";
@@ -11,17 +12,17 @@ export default function post({ post }: Props) {
         <Image
           alt="banner"
           src={`/images/post${post.data.thumbnail}`}
-          layout="fill"
+          fill
           className="object-cover"
         />
       </div>
       <p className="text-sm mt-2 italic mb-5 text-[#5e81ac]">
         Published on {post.data.createdAt}
       </p>
-      <article
-        className="prose dark:prose-invert"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      ></article>
+
+      <article className="prose dark:prose-invert">
+        <MDXRemote compiledSource={post.content} />
+      </article>
     </Layout>
   );
 }
@@ -37,7 +38,7 @@ export async function getStaticProps({ params }: Params) {
 
 export function getStaticPaths() {
   const slugs = getAllSlug().map((slug) => ({
-    params: { slug: slug.replace(".md", "") },
+    params: { slug: slug.replace(".mdx", "") },
   }));
   return {
     paths: slugs,

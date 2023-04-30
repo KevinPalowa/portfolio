@@ -30,7 +30,7 @@ export default function Card({
     <div className="hover:bg-slate-700 transition rounded-lg">
       <div className="relative w-full h-52">
         <Image
-          layout="fill"
+          fill
           src={src}
           alt="card image"
           className="rounded-t-md object-cover"

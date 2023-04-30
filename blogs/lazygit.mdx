@@ -18,7 +18,7 @@ Pernah ga sih kalian pake git dan mau menambahkan file ke stage tapi bingung kar
 
 #### Menggunakan scoop
 
-```
+```bash
 # Add the extras bucket
 scoop bucket add extras
 
@@ -28,7 +28,7 @@ scoop install lazygit
 
 #### Menggunakan choco
 
-```
+```bash
 choco install lazygit
 ```
 
@@ -36,34 +36,34 @@ choco install lazygit
 
 #### Arch
 
-```
+```bash
 pacman -S lazygit
 ```
 
 ### Fedora and RHEL
 
-```
+```bash
 sudo dnf copr enable atim/lazygit -y
 sudo dnf install lazygit
 ```
 
 ### Ubuntu
 
-```
+```bash
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep '"tag_name":' |  sed -E 's/.*"v*([^"]+)".*/\1/')
 ```
 
-```
+```bash
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 ```
 
-```
+```bash
 sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
 ```
 
 Pastikan lazygit terinstall dengan menjalankan.
 
-```
+```bash
 lazygit
 ```
 
