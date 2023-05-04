@@ -5,22 +5,24 @@ export default function about() {
     <Layout title="About - Kevin Palowa">
       <h2 className="font-semibold text-2xl">About</h2>
       <h1 className="font-semibold text-3xl">Muhammad Kevin Alviansyah</h1>
-      <article className="space-y-3 mt-5 text-[#D1D5DB]">
+      <article className="space-y-3 mt-5 text-[#D1D5DB] text-lg">
         <p>
-          Hello my name is Muhammad, I love computer stuff from junior
-          highschool and I love to explore all about computer like OS (I love
-          linux), Software, Hardware.
+          Hi, my name is Muhammad and I have a passion for all things
+          computer-related, particularly hardware, software, and operating
+          systems. I have been coding since I was in high school and fell in
+          love with it right away. There&apos;s nothing more satisfying than
+          solving a difficult problem and finding a solution.
         </p>
-
-        <p className="leading-7">
-          I started coding when i was in highschool, I go to SMK Metland school
-          (Multimedia) that has coding subject I&apos;d love to coding when the
-          first I started, I like when i fix the problem it feels so satisfied
-          when I found the solution and from there I&apos;m more in depth learn
-          coding Web Programming specifically, and currently i work with react
-          development,There are a lot plenty things that i want to learn in
-          react environment and it keeps me motivated to keep learning, I will
-          update React learning journey in here.
+        <p>
+          As I continued to learn, I became particularly interested in web
+          programming. I am currently working with React development and I am
+          always exploring and learning new things. There&apos;s so much to
+          learn in the React environment, and I am motivated to continue
+          improving my skills.
+        </p>
+        <p>
+          Thank you for taking the time to read my about page section. I am
+          excited to see where my coding journey takes me next!
         </p>
       </article>
     </Layout>
