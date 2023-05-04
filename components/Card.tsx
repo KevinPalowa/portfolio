@@ -13,7 +13,7 @@ type ButtonProps = {
 function Button({ children, href }: ButtonProps) {
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
-      <button className="font-bold p-3 bg-blue-500 rounded-md">
+      <button className="font-bold px-3 py-2 bg-[#B48EAD] rounded-md">
         {children}
       </button>
     </a>
