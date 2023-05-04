@@ -5,14 +5,14 @@ export default function about() {
     <Layout title="About - Kevin Palowa">
       <h2 className="font-semibold text-2xl">About</h2>
       <h1 className="font-semibold text-3xl">Muhammad Kevin Alviansyah</h1>
-      <article className="space-y-3 mt-5">
+      <article className="space-y-3 mt-5 text-[#D1D5DB]">
         <p>
           Hello my name is Muhammad, I love computer stuff from junior
           highschool and I love to explore all about computer like OS (I love
           linux), Software, Hardware.
         </p>
 
-        <p>
+        <p className="leading-7">
           I started coding when i was in highschool, I go to SMK Metland school
           (Multimedia) that has coding subject I&apos;d love to coding when the
           first I started, I like when i fix the problem it feels so satisfied
