@@ -62,7 +62,7 @@ export default function NavBar() {
             <XIcon className="text-[#000000] dark:text-light-primary w-[24px]" />
           </button>
           <Link href="/">Home</Link>
-          <Link href="/works">Works</Link>
+          <Link href="/projects">Projects</Link>
           <Link href="/about">About</Link>
           <Link href="/posts">Posts</Link>
         </motion.div>
