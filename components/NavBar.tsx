@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { navigationLinks } from "../data/content";
@@ -35,30 +36,52 @@ export default function NavBar() {
             Let&apos;s talk
           </a>
           <button
-            className="rounded-full border border-slate-300 px-4 py-2 text-xs uppercase tracking-[0.2em] text-slate-700 transition hover:border-slate-900 hover:text-slate-900 dark:border-white/20 dark:text-white md:hidden"
+            className="rounded-full border border-slate-300 p-3 text-slate-700 transition hover:border-slate-900 hover:text-slate-900 dark:border-white/20 dark:text-white md:hidden"
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-label="Toggle navigation menu"
           >
-            Menu
+            <span className="sr-only">Toggle menu</span>
+            <svg
+              className="h-5 w-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
           </button>
         </div>
       </div>
-      {isMenuOpen ? (
-        <div className="border-t border-slate-200 bg-white px-4 py-4 transition dark:border-white/10 dark:bg-slate-950 md:hidden">
-          <nav className="flex flex-col gap-4">
-            {navigationLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="text-sm uppercase tracking-[0.3em] text-slate-700 dark:text-slate-300"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-        </div>
-      ) : null}
+      <AnimatePresence>
+        {isMenuOpen ? (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            className="overflow-hidden border-t border-slate-200 bg-white px-4 py-4 dark:border-white/10 dark:bg-slate-950 md:hidden"
+          >
+            <nav className="flex flex-col gap-4">
+              {navigationLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="text-sm uppercase tracking-[0.3em] text-slate-700 dark:text-slate-300"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
     </header>
   );
 }
