@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       defaultTheme="system"
       enableSystem
       disableTransitionOnChange
+      storageKey="kp-theme"
     >
       <Component {...pageProps} />
     </ThemeProvider>
