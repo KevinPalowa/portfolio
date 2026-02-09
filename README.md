@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Kevin Palowa — Portfolio
 
-## Getting Started
+Next.js + Tailwind landing page that showcases Kevin Palowa as a senior Frontend Developer. Minimal, mobile-first, SEO friendly, and powered by structured data for every section.
 
-First, run the development server:
+### Tech stack
+- Next.js 13 (Pages Router) + React 18 + TypeScript
+- Tailwind CSS 3 + Framer Motion + next-themes
+- Content lives inside `data/` (TypeScript modules + JSON for projects)
 
-```bash
-npm run dev
-# or
-yarn dev
+### Folder structure
+```
+├── components
+│   ├── Layout.tsx
+│   ├── NavBar.tsx
+│   ├── Footer.tsx
+│   ├── ThemeToggle.tsx
+│   ├── common/SectionHeading.tsx
+│   └── sections/
+│       ├── HeroSection.tsx
+│       ├── AboutSection.tsx
+│       ├── SkillsSection.tsx
+│       ├── ProjectsSection.tsx
+│       ├── ExperienceSection.tsx
+│       └── ContactSection.tsx
+├── data
+│   ├── content.ts         // copy + metadata for hero/about/skills/experience/contact
+│   └── projects.json      // project list with stacks, features, links
+├── pages
+│   ├── _app.tsx
+│   ├── _document.tsx
+│   ├── 404.tsx
+│   └── index.tsx          // stitches all sections together
+├── styles/globals.css
+└── tailwind.config.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Getting started
+```bash
+# install dependencies
+pnpm install   # or npm install
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# run development server
+pnpm dev
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# build for production
+pnpm build
+# run production build locally
+pnpm start
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# lint
+pnpm lint
+```
 
-## Learn More
+### Content data
+- Update section copy in `data/content.ts`.
+- Projects pull from `data/projects.json`; add new objects using the same shape (`title`, `summary`, `technologies`, `features`, `links`).
+- Interfaces in `types/content.ts` keep autocomplete/snippets accurate.
 
-To learn more about Next.js, take a look at the following resources:
+### Deployment (Vercel)
+1. Push this repo to GitHub/GitLab.
+2. Import it on [Vercel](https://vercel.com/new) and select the Next.js preset.
+3. Ensure `pnpm build` (or `npm run build`) passes in preview.
+4. Point production to `main` and deploy. Attach a custom domain if desired.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+No environment variables are required right now. If you add external services (forms, analytics, etc.), document the needed variables in this section.

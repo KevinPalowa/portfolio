@@ -1,0 +1,52 @@
+[
+  {
+    "title": "E-Commerce Platform",
+    "summary": "A mini e-commerce experience built with Next.js, Stripe payments, and Sanity CMS for catalog management.",
+    "technologies": ["Next.js", "Stripe", "Sanity CMS"],
+    "features": [
+      "Stripe checkout with multistep validation",
+      "Product content managed via Sanity so non-technical teams can update easily",
+      "Responsive UI optimized for mobile shoppers"
+    ]
+  },
+  {
+    "title": "F&B CMS",
+    "summary": "CMS for an F&B brand that needs tight control over menu, stock, and promos across branches.",
+    "technologies": ["Next.js"],
+    "features": [
+      "Pixel-perfect slicing from Figma to reusable Next.js components",
+      "Internal API integration to sync menu items and inventory levels",
+      "Preview mode so marketing can review content before publishing"
+    ]
+  },
+  {
+    "title": "Hospital Admin",
+    "summary": "Hospital administration dashboard that surfaces patient data, doctor schedules, and reports from a responsive UI.",
+    "technologies": ["React.js"],
+    "features": [
+      "Patient tables with advanced filters and exportable reports",
+      "Doctor schedule integration plus WebSocket notifications",
+      "Role-based access for admins, doctors, and finance teams"
+    ]
+  },
+  {
+    "title": "Credit Facility System",
+    "summary": "Vue.js credit facility platform that manages drawdown and repayment workflows across currencies.",
+    "technologies": ["Vue.js"],
+    "features": [
+      "Multistep drawdown/repayment forms with strict validation",
+      "Interactive tables with expandable rows and CRUD modals",
+      "Multi-currency support with real-time allocation tracking"
+    ]
+  },
+  {
+    "title": "Logistics Management System",
+    "summary": "Logistics dashboard for tracking shipments, SLAs, and order status in real time.",
+    "technologies": ["React.js", "Next.js"],
+    "features": [
+      "Shipment tracking with instant status updates",
+      "Integration with logistics APIs (order, warehouse, delivery)",
+      "Informative UI for operators with tables and visual status cues"
+    ]
+  }
+]

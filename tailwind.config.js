@@ -3,24 +3,26 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./data/**/*.{js,ts,jsx,tsx,json}",
   ],
   theme: {
     container: {
       center: true,
+      padding: "1rem",
     },
     extend: {
       colors: {
-        light: {
-          primary: "#d8dee9",
+        brand: {
+          teal: "#2dd4bf",
+          navy: "#020617",
         },
-        dark: {
-          primary: "#2e3440",
-          text: "#ECEFF4",
-        },
+      },
+      boxShadow: {
+        glow: "0 10px 40px rgba(45, 212, 191, 0.4)",
       },
     },
     fontFamily: {
-      sans: ["IBM Plex sans", "ui-sans-serif", "system-ui"],
+      sans: ["Space Grotesk", "ui-sans-serif", "system-ui"],
     },
   },
   plugins: [require("@tailwindcss/typography")],

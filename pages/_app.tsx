@@ -5,7 +5,7 @@ import "../styles/codeHighlighting.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       <Component {...pageProps} />
     </ThemeProvider>
   );

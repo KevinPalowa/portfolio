@@ -15,7 +15,7 @@ export default function ThemeToggle() {
       onClick={() => {
         setTheme(theme === "light" ? "dark" : "light");
       }}
-      className="dark:bg-[#d08770] bg-[#B48EAD] px-2 py-2 rounded-md focus:outline-none dark:focus:border-light-primary"
+      className="rounded-full border border-slate-300 px-3 py-2 text-slate-800 transition hover:border-teal-400 focus:outline-none dark:border-white/10 dark:text-white"
       aria-label="Theme toggle button"
     >
       <motion.div
@@ -23,7 +23,7 @@ export default function ThemeToggle() {
         animate={theme === "dark" ? "in" : "exit"}
       >
         {mounted && theme === "dark" && (
-          <SunIcon className="text-[#eceff4] w-[20px]" />
+          <SunIcon className="h-5 w-5 text-amber-300" />
         )}
       </motion.div>
       <motion.div
@@ -31,7 +31,7 @@ export default function ThemeToggle() {
         animate={theme === "light" ? "in" : "exit"}
       >
         {mounted && theme === "light" && (
-          <MoonIcon className="text-[#eceff4] w-[20px]" />
+          <MoonIcon className="h-5 w-5 text-slate-800" />
         )}
       </motion.div>
     </button>

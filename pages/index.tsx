@@ -1,16 +1,20 @@
-import Hero from "../components/Hero";
 import Layout from "../components/Layout";
-import Section from "../components/Section";
+import AboutSection from "../components/sections/AboutSection";
+import ContactSection from "../components/sections/ContactSection";
+import ExperienceSection from "../components/sections/ExperienceSection";
+import HeroSection from "../components/sections/HeroSection";
+import ProjectsSection from "../components/sections/ProjectsSection";
+import SkillsSection from "../components/sections/SkillsSection";
+
 export default function Home() {
   return (
-    <Layout title="Kevin Palowa - Home">
-      <Hero />
-      <Section title="Work">
-        <p className="text-sm tracking-wide line ">
-          Hi! My name is Kevin Palowa i&apos;m currently working with React
-          ecosystem, and love linux
-        </p>
-      </Section>
+    <Layout>
+      <HeroSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ExperienceSection />
+      <ContactSection />
     </Layout>
   );
 }

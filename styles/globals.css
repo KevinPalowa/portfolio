@@ -1,4 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont;
+  background-color: #f8fafc;
+  color: #0f172a;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+
+#__next {
+  min-height: 100vh;
+}
+
+html.dark body {
+  background-color: #020617;
+  color: #f8fafc;
+}
+
+a {
+  transition: color 150ms ease;
+}
