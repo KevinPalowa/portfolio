@@ -123,7 +123,7 @@ export const socials: SocialLink[] = [
   },
   {
     label: "LinkedIn",
-    handle: "/in/kevinpalowa",
+    handle: "Muhammad Kevin Alviansyah",
     href: "https://linkedin.com/in/kevinpalowa",
   },
   {
